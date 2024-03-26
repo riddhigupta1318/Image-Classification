@@ -38,12 +38,7 @@ The project requires the following packages:
 ## Data Preparation
 Download the COCO 2017 dataset and annotations. Organize the dataset and annotations in the required directory structure. You can adjust the paths accordingly in the code.
 
-## Building Vocabulary
 
-caption_path = 'path_to_annotations_file'
-vocab_path = 'path_to_save_vocab.pkl'
-threshold = 5
-main(caption_path, vocab_path, threshold)
 
 ## Training
 
@@ -53,7 +48,13 @@ Use the get_loader function to create data loaders for training and validation s
 
 Evaluate the model using metrics like BLEU score on a separate validation set. Generate captions for test images and visualize the results.
 
-You can install the required packages using pip:
+## Building Vocabulary
+
 ```bash
-pip install -r requirements.txt
+caption_path = 'path_to_annotations_file'
+vocab_path = 'path_to_save_vocab.pkl'
+threshold = 5
+main(caption_path, vocab_path, threshold)
+
+
 
