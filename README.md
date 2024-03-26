@@ -33,11 +33,6 @@ The project requires the following packages:
 - imageio
 - pytorch_pretrained_bert
 
-You can install the required packages using pip:
-```bash
-pip install -r requirements.txt
-
-
 # Usage
 
 ## Data Preparation
@@ -57,3 +52,8 @@ Use the get_loader function to create data loaders for training and validation s
 ## Evaluation
 
 Evaluate the model using metrics like BLEU score on a separate validation set. Generate captions for test images and visualize the results.
+
+You can install the required packages using pip:
+```bash
+pip install -r requirements.txt
+
